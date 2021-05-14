@@ -425,12 +425,12 @@ h2 {
   margin: 0; }
 
 h1 {
-  font-size: 64px;
+  font-size: 58px;
   margin-bottom: 16px; }
 
 h2 {
   font-size: 48px;
-  margin-bottom: 16px; }
+  margin-bottom: 32px; }
 
 .main-text {
   font-size: 22px;
@@ -454,6 +454,7 @@ h2 {
   background: linear-gradient(243.96deg, #05ccbb 10.6%, rgba(79, 154, 247, 0.961912) 49.07%, rgba(167, 89, 255, 0.926133) 85.89%); }
   .promo h1 {
     margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 74px;
     text-align: center; }
   .promo .container {
@@ -585,6 +586,9 @@ a.btn {
   font-size: 16px;
   -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2); }
+
+.content-img {
+  margin-bottom: 40px; }
 
 @media (max-width: 800px) {
   .promo h1 {
