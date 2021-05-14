@@ -488,7 +488,7 @@ h2 {
   padding: 150px 0;
   text-align: center;
   color: white;
-  background-image: url("/img/history-bg.svg");
+  background-image: url("../img/history-bg.svg");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -522,7 +522,7 @@ a.btn {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background-image: url("/img/facts-bg.svg");
+  background-image: url("../img/facts-bg.svg");
   background-repeat: no-repeat;
   background-size: cover; }
 
