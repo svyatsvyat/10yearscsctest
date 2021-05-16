@@ -519,8 +519,8 @@ a.btn {
 .facts {
   position: relative;
   top: -10px;
-  margin-bottom: -140px;
-  padding: 100px 0;
+  margin-bottom: -10px;
+  padding: 100px 0 200px;
   text-align: center;
   color: white;
   background-image: url("../img/facts-bg.svg");
@@ -590,6 +590,17 @@ a.btn {
 .content-img {
   margin-bottom: 40px; }
 
+.map {
+  position: relative;
+  top: -100px;
+  margin-bottom: -10 0px;
+  padding: 150px 0 100px;
+  text-align: center;
+  color: white;
+  background-image: url("../img/map-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 @media (max-width: 800px) {
   .promo h1 {
     font-size: 48px; }
@@ -599,5 +610,13 @@ a.btn {
     font-size: 30px; }
   .main-text {
     font-size: 18px; } }
+
+a.content-link {
+  text-decoration: none;
+  color: white;
+  background-color: #a25bfc;
+  padding: 2px; }
+  a.content-link:hover {
+    background-color: #f59d20; }
 
 /*# sourceMappingURL=style.css.map */
