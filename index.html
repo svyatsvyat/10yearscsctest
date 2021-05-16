@@ -158,5 +158,33 @@
             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A53f0ae0c2af516383c247214ea98269f93110128a3d498bb07257ec9f590a15a&amp;width=100%25&amp;height=480&amp;lang=ru_RU&amp;scroll=true"></script>
   </div>
 </section>
+<div class="share-btns">
+  <p class="share-btns__title">Поделиться</p>
+  <!-- Put this script tag to the place, where the Share button will be -->
+  <script type="text/javascript">
+    document.write(VK.Share.button(false, {
+      type: "custom",
+      image: '',
+      text: ""
+    }));
+  </script><a href="//vk.com/share.php?url=https%3A%2F%2Fnewyear.compscicenter.ru%2F" onmouseup="this._btn=event.button;this.blur();" onclick="return VK.Share.click(0, this);" style="display: inline-block;text-decoration: none;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;"><span style="position: relative;padding: 0;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;"><img src="https://vk.com/images/share_32.png" width="32" height="32" alt="Поделиться во Вконтакте"></span></a>
+  <div id="fb-share-button" aria-label="Поделиться на Facebook">
+    <svg viewBox="0 0 12 12" preserveAspectRatio="xMidYMid meet">
+      <path class="svg-icon-path" d="M9.1,0.1V2H8C7.6,2,7.3,2.1,7.1,2.3C7,2.4,6.9,2.7,6.9,3v1.4H9L8.8,6.5H6.9V12H4.7V6.5H2.9V4.4h1.8V2.8 c0-0.9,0.3-1.6,0.7-2.1C6,0.2,6.6,0,7.5,0C8.2,0,8.7,0,9.1,0.1z"></path>
+    </svg>
+  </div>
+</div>
+<script>
+  var fbButton = document.getElementById('fb-share-button');
+  var url = window.location.href;
+
+  fbButton.addEventListener('click', function () {
+    window.open('https://www.facebook.com/sharer/sharer.php?u=' + url,
+      'facebook-share-dialog',
+      'width=800,height=600'
+    );
+    return false;
+  });
+</script>
 </body>
 </html>
