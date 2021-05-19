@@ -10,12 +10,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
   <title>Юбилей CS центра</title>
   <script type="text/javascript" src="https://vk.com/js/api/share.js?93" charset="windows-1251"></script>
-  <meta property="og:title" content="С Днем Рождения, CS центр!" />
+  <meta property="og:title" content="С днем рождения, CS центр!" />
   <meta property="og:image" content="https://raw.githubusercontent.com/svyatsvyat/10yearscsctest/main/img/social-media-preview.jpg" />
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
 
+<div class="preload">
+  <div class="container">
+    <div class="ten ten--small">
+      <div class="one">
+        <div class="brick duration-2 one-1 bg-teal"></div>
+        <div class="brick duration-1 bg-violet"></div>
+        <div class="brick duration-3 bg-orange"></div>
+        <div class="brick duration-1 one-4 bg-teal"></div>
+      </div>
+      <div class="zero">
+        <div class="row">
+          <div class="brick duration-2 bg-teal round-top-left"></div>
+          <div class="brick duration-5 bg-violet round-top-right"></div>
+        </div>
+        <div class="row">
+          <div class="brick duration-5 bg-orange"></div>
+          <div class="brick duration-3 bg-teal"></div>
+        </div>
+        <div class="row">
+          <div class="brick duration-4 bg-teal"></div>
+          <div class="brick duration-5 bg-violet"></div>
+        </div>
+        <div class="row">
+          <div class="brick duration-1 bg-orange round-bottom-left"></div>
+          <div class="brick duration-2 bg-teal round-bottom-right"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <section class="promo">
   <header class="header">
     <div class="container">
@@ -112,9 +142,9 @@
   </div>
   <a href="history.html" class="btn">Вернуться в прошлое</a>
 </section>
-<section class="interview" id="interview">
+<section class="interview">
   <div class="container">
-    <h2>Люди центра</h2>
+    <h2 id="interview">Люди центра</h2>
     <div class="card-deck">
       <a href="interview-barashev.html" class="card">
         <img src="img/interview/barashev/barashev.png" width="172" height="172" alt="Дмитрий Барашев">
@@ -131,9 +161,9 @@
     </div>
   </div>
 </section>
-<section class="map" id="map">
+<section class="map">
   <div class="container">
-    <h2>Выпускники центра</h2>
+    <h2 id="map">Выпускники центра</h2>
     <script type="text/javascript" charset="utf-8" async
             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A53f0ae0c2af516383c247214ea98269f93110128a3d498bb07257ec9f590a15a&amp;width=100%25&amp;height=480&amp;lang=ru_RU&amp;scroll=true"></script>
   </div>
@@ -166,6 +196,25 @@
     );
     return false;
   });
+</script>
+<script>
+  const wait = (delay = 0) =>
+    new Promise(resolve => setTimeout(resolve, delay));
+
+  const setVisible = (elementOrSelector, visible) =>
+    (typeof elementOrSelector === 'string'
+        ? document.querySelector(elementOrSelector)
+        : elementOrSelector
+    ).style.display = visible ? 'block' : 'none';
+
+  // setVisible('.promo', false);
+  setVisible('.preload', true);
+
+  document.addEventListener('DOMContentLoaded', () =>
+    wait(3000).then(() => {
+      // setVisible('.promo', true);
+      setVisible('.preload', false);
+    }));
 </script>
 </body>
 </html>
