@@ -630,15 +630,17 @@ a.btn {
 .color-teal {
   color: #07c29e; }
 
-.practice {
+.social-media {
   text-align: center; }
-  .practice .card__title {
-    text-align: left;
-    font-size: 20px; }
-  .practice .card {
-    font-size: 16px;
-    -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2); }
+
+.practice .card__title {
+  text-align: left;
+  font-size: 20px; }
+
+.practice .card {
+  font-size: 16px;
+  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2); }
 
 .content-img {
   margin-bottom: 40px; }
