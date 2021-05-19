@@ -167,12 +167,12 @@
             animation: car-body-rotate 5s linear 5s infinite; }
 
 .round-1 {
-  -webkit-animation: round-1 2s linear infinite;
-          animation: round-1 2s linear infinite; }
+  -webkit-animation: round-1 1200ms linear infinite;
+          animation: round-1 1200ms linear infinite; }
 
 .round-2 {
-  -webkit-animation: round-2 2s linear infinite;
-          animation: round-2 2s linear infinite; }
+  -webkit-animation: round-2 1200ms linear infinite;
+          animation: round-2 1200ms linear infinite; }
 
 @-webkit-keyframes round-1 {
   0% {
@@ -348,6 +348,17 @@
   list-style: none; }
   .main-nav_menu .menu_item {
     padding: 5px 10px; }
+    .main-nav_menu .menu_item:hover {
+      color: #a25bfc; }
+    .main-nav_menu .menu_item.active {
+      background-color: #a25bfc;
+      border-radius: 3px; }
+      .main-nav_menu .menu_item.active a {
+        color: white; }
+      .main-nav_menu .menu_item.active:hover {
+        background-color: #8b46e2; }
+        .main-nav_menu .menu_item.active:hover a {
+          color: white; }
 
 @media (max-width: 800px) {
   .main-nav_menu {
@@ -355,8 +366,19 @@
 
 .main-nav.main-nav--inner {
   margin-bottom: 80px; }
-  .main-nav.main-nav--inner a {
+  .main-nav.main-nav--inner .menu_item a {
     color: #1b1e21; }
+    .main-nav.main-nav--inner .menu_item a:hover {
+      color: #a25bfc; }
+  .main-nav.main-nav--inner .menu_item.active {
+    background-color: #a25bfc;
+    border-radius: 3px; }
+    .main-nav.main-nav--inner .menu_item.active a {
+      color: white; }
+    .main-nav.main-nav--inner .menu_item.active:hover {
+      background-color: #8b46e2; }
+      .main-nav.main-nav--inner .menu_item.active:hover a {
+        color: white; }
 
 .main-nav_logotype {
   -ms-flex-negative: 0;
@@ -457,6 +479,20 @@
   .card .card__img {
     width: 100%;
     text-align: center; }
+
+.card__subtitle {
+  font-size: 16px;
+  margin: 0;
+  padding: 0; }
+
+.soviet {
+  margin-bottom: 40px; }
+  .soviet .card {
+    text-align: center;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+    cursor: unset; }
 
 html {
   scroll-behavior: smooth; }
@@ -674,5 +710,8 @@ a.content-link {
   padding: 2px; }
   a.content-link:hover {
     background-color: #f59d20; }
+
+.fotorama {
+  margin-bottom: 40px; }
 
 /*# sourceMappingURL=style.css.map */
