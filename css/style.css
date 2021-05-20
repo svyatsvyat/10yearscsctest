@@ -34,10 +34,8 @@
     -webkit-transition: -webkit-transform 300ms linear;
     transition: -webkit-transform 300ms linear;
     transition: transform 300ms linear;
-    transition: transform 300ms linear, -webkit-transform 300ms linear; }
-    .ten .brick:hover {
-      -webkit-transform: scale(1.25);
-              transform: scale(1.25); }
+    transition: transform 300ms linear, -webkit-transform 300ms linear;
+    overflow: hidden; }
   .ten .one-4 {
     width: 220px; }
 
@@ -78,6 +76,296 @@
 
 .round-bottom-left {
   border-radius: 0 0 0 100%; }
+
+.ten-animation-camera #camera-light {
+  opacity: 0; }
+
+.ten-animation-pizza #pizza-1,
+.ten-animation-pizza #pizza-2,
+.ten-animation-pizza #pizza-3,
+.ten-animation-pizza #pizza-4 {
+  opacity: 0; }
+
+.ten-animation-pen svg {
+  -webkit-transition: all 600ms linear;
+  transition: all 600ms linear; }
+  .ten-animation-pen svg #pen-line {
+    opacity: 0;
+    -webkit-transition: all 600ms linear;
+    transition: all 600ms linear; }
+
+@media (min-width: 800px) {
+  .ten .brick:hover {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25); }
+  .ten-animation-computer:hover #code {
+    -webkit-animation: ten-animation-computer 1s linear infinite;
+            animation: ten-animation-computer 1s linear infinite; }
+  .ten-animation-airplane:hover svg {
+    -webkit-animation: ten-animation-airplane 2s ease-in-out;
+            animation: ten-animation-airplane 2s ease-in-out; }
+  .ten-animation-load:hover .load {
+    -webkit-animation: ten-animation-load 2s ease-in-out infinite;
+            animation: ten-animation-load 2s ease-in-out infinite; }
+  .ten-animation-girl #girl-arm {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  .ten-animation-girl:hover #girl-arm {
+    -webkit-transform-origin: 30% 99%;
+            transform-origin: 30% 99%;
+    -webkit-animation: ten-animation-girl 2s linear infinite;
+            animation: ten-animation-girl 2s linear infinite; }
+  .ten-animation-cat #cat-hat {
+    -webkit-transition: -webkit-transform 300ms linear;
+    transition: -webkit-transform 300ms linear;
+    transition: transform 300ms linear;
+    transition: transform 300ms linear, -webkit-transform 300ms linear; }
+  .ten-animation-cat:hover #cat-hat {
+    -webkit-transition: -webkit-transform 800ms linear;
+    transition: -webkit-transform 800ms linear;
+    transition: transform 800ms linear;
+    transition: transform 800ms linear, -webkit-transform 800ms linear;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); }
+  .ten-animation-boy #boy-eyes {
+    -webkit-transition: -webkit-transform 300ms linear;
+    transition: -webkit-transform 300ms linear;
+    transition: transform 300ms linear;
+    transition: transform 300ms linear, -webkit-transform 300ms linear; }
+  .ten-animation-boy:hover #boy-eyes {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px); }
+  .ten-animation-logo svg {
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear; }
+  .ten-animation-logo:hover svg {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5); }
+  .ten-animation-fire:hover #fire-1,
+  .ten-animation-fire:hover #fire-2,
+  .ten-animation-fire:hover #fire-3 {
+    -webkit-animation: ten-animation-fire 1s 200ms ease-in-out;
+            animation: ten-animation-fire 1s 200ms ease-in-out; }
+  .ten-animation-hat svg {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear; }
+  .ten-animation-hat:hover.brick {
+    overflow: visible; }
+  .ten-animation-hat:hover svg {
+    -webkit-transform: translateY(40px) translateX(-8px);
+            transform: translateY(40px) translateX(-8px); }
+    .ten-animation-hat:hover svg .svg-violet {
+      fill: #282b30; }
+  .ten-animation-camera:hover #camera-light {
+    -webkit-animation: ten-animation-camera 1s 200ms ease-in-out infinite;
+            animation: ten-animation-camera 1s 200ms ease-in-out infinite; }
+  .ten-animation-pizza:hover svg #pizza-1 {
+    -webkit-animation: ten-animation-pizza 10s 400ms ease-in-out;
+            animation: ten-animation-pizza 10s 400ms ease-in-out; }
+  .ten-animation-pizza:hover svg #pizza-2 {
+    -webkit-animation: ten-animation-pizza 10s 800ms ease-in-out;
+            animation: ten-animation-pizza 10s 800ms ease-in-out; }
+  .ten-animation-pizza:hover svg #pizza-3 {
+    -webkit-animation: ten-animation-pizza 10s 1200ms ease-in-out;
+            animation: ten-animation-pizza 10s 1200ms ease-in-out; }
+  .ten-animation-pizza:hover svg #pizza-4 {
+    -webkit-animation: ten-animation-pizza 10s 1600ms ease-in-out;
+            animation: ten-animation-pizza 10s 1600ms ease-in-out; }
+  .ten-animation-pen:hover svg {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px); }
+    .ten-animation-pen:hover svg #pen-line {
+      opacity: 1;
+      width: 35px;
+      -webkit-transform: translateX(-30px);
+              transform: translateX(-30px); } }
+
+@-webkit-keyframes ten-animation-computer {
+  0% {
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  25% {
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg); }
+  75% {
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg); }
+  100% {
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@keyframes ten-animation-computer {
+  0% {
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  25% {
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg); }
+  75% {
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg); }
+  100% {
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@-webkit-keyframes ten-animation-airplane {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%); }
+  39% {
+    -webkit-transform: translate(100%, -100%);
+            transform: translate(100%, -100%); }
+  40% {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%); }
+  61% {
+    -webkit-transform: translate(-100%, 100%);
+            transform: translate(-100%, 100%); }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%); } }
+
+@keyframes ten-animation-airplane {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%); }
+  39% {
+    -webkit-transform: translate(100%, -100%);
+            transform: translate(100%, -100%); }
+  40% {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%); }
+  61% {
+    -webkit-transform: translate(-100%, 100%);
+            transform: translate(-100%, 100%); }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%); } }
+
+@-webkit-keyframes ten-animation-load {
+  0% {
+    opacity: 100%; }
+  50% {
+    opacity: 20%; }
+  100% {
+    opacity: 100%; } }
+
+@keyframes ten-animation-load {
+  0% {
+    opacity: 100%; }
+  50% {
+    opacity: 20%; }
+  100% {
+    opacity: 100%; } }
+
+@-webkit-keyframes ten-animation-girl {
+  0% {
+    -webkit-transform: rotate(0) translateY(10px);
+            transform: rotate(0) translateY(10px); }
+  25% {
+    -webkit-transform: rotate(10deg) translateY(10px);
+            transform: rotate(10deg) translateY(10px); }
+  75% {
+    -webkit-transform: rotate(-10deg) translateY(10px);
+            transform: rotate(-10deg) translateY(10px); }
+  100% {
+    -webkit-transform: rotate(0) translateY(10px);
+            transform: rotate(0) translateY(10px); } }
+
+@keyframes ten-animation-girl {
+  0% {
+    -webkit-transform: rotate(0) translateY(10px);
+            transform: rotate(0) translateY(10px); }
+  25% {
+    -webkit-transform: rotate(10deg) translateY(10px);
+            transform: rotate(10deg) translateY(10px); }
+  75% {
+    -webkit-transform: rotate(-10deg) translateY(10px);
+            transform: rotate(-10deg) translateY(10px); }
+  100% {
+    -webkit-transform: rotate(0) translateY(10px);
+            transform: rotate(0) translateY(10px); } }
+
+@-webkit-keyframes ten-animation-fire {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes ten-animation-fire {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@-webkit-keyframes ten-animation-camera {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 50%; }
+  50% {
+    opacity: 30%; }
+  45% {
+    opacity: 50%; }
+  100% {
+    opacity: 0; } }
+
+@keyframes ten-animation-camera {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 50%; }
+  50% {
+    opacity: 30%; }
+  45% {
+    opacity: 50%; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes ten-animation-pizza {
+  0% {
+    opacity: 0; }
+  2% {
+    opacity: 100%; }
+  100% {
+    opacity: 100%; } }
+
+@keyframes ten-animation-pizza {
+  0% {
+    opacity: 0; }
+  2% {
+    opacity: 100%; }
+  100% {
+    opacity: 100%; } }
 
 .car-animation {
   position: relative;
@@ -337,9 +625,21 @@
         .main-nav_menu .menu_item.active:hover a {
           color: white; }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .main-nav_menu {
-    display: none; } }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: right;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    top: 5px; } }
 
 .main-nav.main-nav--inner {
   margin-bottom: 80px; }
@@ -361,7 +661,11 @@
   -ms-flex-negative: 0;
       flex-shrink: 0; }
 
-.preload {
+#page {
+  display: none; }
+
+#preload {
+  display: block;
   position: fixed;
   top: 0;
   right: 0;
@@ -369,7 +673,7 @@
   left: 0;
   background-color: #191d21;
   z-index: 1000; }
-  .preload .container {
+  #preload .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -380,36 +684,36 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .preload .ten .brick {
+  #preload .ten .brick {
     -webkit-animation: preload 1s 100ms linear;
             animation: preload 1s 100ms linear;
     -webkit-box-shadow: none;
             box-shadow: none;
     opacity: 0; }
-    .preload .ten .brick:hover {
+    #preload .ten .brick:hover {
       -webkit-transform: none;
               transform: none; }
-    .preload .ten .brick.duration-1 {
+    #preload .ten .brick.duration-1 {
       -webkit-animation-duration: 10s;
               animation-duration: 10s;
       -webkit-animation-delay: 200ms;
               animation-delay: 200ms; }
-    .preload .ten .brick.duration-2 {
+    #preload .ten .brick.duration-2 {
       -webkit-animation-duration: 10s;
               animation-duration: 10s;
       -webkit-animation-delay: 400ms;
               animation-delay: 400ms; }
-    .preload .ten .brick.duration-3 {
+    #preload .ten .brick.duration-3 {
       -webkit-animation-duration: 10s;
               animation-duration: 10s;
       -webkit-animation-delay: 600ms;
               animation-delay: 600ms; }
-    .preload .ten .brick.duration-4 {
+    #preload .ten .brick.duration-4 {
       -webkit-animation-duration: 10s;
               animation-duration: 10s;
       -webkit-animation-delay: 800ms;
               animation-delay: 800ms; }
-    .preload .ten .brick.duration-5 {
+    #preload .ten .brick.duration-5 {
       -webkit-animation-duration: 10s;
               animation-duration: 10s;
       -webkit-animation-delay: 1000ms;
@@ -631,6 +935,25 @@ h2 {
   background-image: url("../img/bg/history-bg.svg");
   background-repeat: no-repeat;
   background-size: cover; }
+  .history a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: #a25bfc;
+    -webkit-box-shadow: 3px 3px 0 0 white, 5px 5px 0 0 white, 7px 7px 0 0 #139b80;
+            box-shadow: 3px 3px 0 0 white, 5px 5px 0 0 white, 7px 7px 0 0 #139b80;
+    -webkit-transition: all 100ms linear;
+    transition: all 100ms linear; }
+    .history a.btn:hover {
+      -webkit-transform: translateX(5px) translateY(5px);
+              transform: translateX(5px) translateY(5px);
+      -webkit-box-shadow: 1px 1px 0 0 white, 2px 2px 0 0 white, 3px 3px 0 0 #066754;
+              box-shadow: 1px 1px 0 0 white, 2px 2px 0 0 white, 3px 3px 0 0 #066754;
+      background-color: #9247f1; }
 
 a.btn {
   display: inline-block;
@@ -638,18 +961,9 @@ a.btn {
   font-size: 24px;
   text-decoration: none;
   color: white;
-  border: 2px solid white;
   border-radius: 8px;
-  background-color: #a25bfc;
-  -webkit-box-shadow: 3px 3px 0 0 white, 5px 5px 0 0 white, 7px 7px 0 0 #139b80;
-          box-shadow: 3px 3px 0 0 white, 5px 5px 0 0 white, 7px 7px 0 0 #139b80;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear; }
+  background-color: #a25bfc; }
   a.btn:hover {
-    -webkit-transform: translateX(5px) translateY(5px);
-            transform: translateX(5px) translateY(5px);
-    -webkit-box-shadow: 1px 1px 0 0 white, 2px 2px 0 0 white, 3px 3px 0 0 #066754;
-            box-shadow: 1px 1px 0 0 white, 2px 2px 0 0 white, 3px 3px 0 0 #066754;
     background-color: #9247f1; }
 
 .alumni {
@@ -682,7 +996,7 @@ a.btn {
           box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2); }
 
 .content-img {
-  margin-bottom: 40px; }
+  margin-bottom: 50px; }
 
 .map {
   position: relative;
@@ -707,11 +1021,12 @@ a.btn {
 
 a.content-link {
   text-decoration: none;
-  color: white;
-  background-color: #a25bfc;
-  padding: 2px; }
+  color: #a25bfc;
+  padding: 2px;
+  border-bottom: 1px solid #a25bfc; }
   a.content-link:hover {
-    background-color: #f59d20; }
+    color: #f59d20;
+    border-bottom: 1px solid #f59d20; }
 
 .fotorama {
   margin-bottom: 40px; }
